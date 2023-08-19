@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         if (operation === '/' && currentOperationScreen.textContent === '0') {
             alert("Error: Division by zero");
+            clear();
             return;
         }
     
