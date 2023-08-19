@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastOperationScreen=document.getElementById('lastOperationScreen');
     const currentOperationScreen=document.getElementById('currentOperationScreen');
 
-    let equalPressed=false;
+    
     let firstNum='';
     let secondNum='';
     let operation=null;
