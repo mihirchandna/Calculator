@@ -7,12 +7,12 @@
     --btn: #eee;
     --btn-hover: #ddd;
     --btn-active: #ccc;
-    --btn-red: rgb(85, 159, 111);
-    --btn-red-hover: rgb(90, 163, 134);
-    --btn-red-active: rgb(67, 134, 116);
-    --btn-blue: rgb(129, 200, 251);
-    --btn-blue-hover: rgb(120, 205, 251);
-    --btn-blue-active: rgb(137, 206, 252);
+    --btn-green: rgb(85, 159, 111);
+    --btn-green-hover: rgb(90, 163, 134);
+    --btn-green-active: rgb(67, 134, 116);
+    --btn-blue: rgb(105, 171, 218);
+    --btn-blue-hover: rgb(103, 180, 221);
+    --btn-blue-active: rgb(114, 179, 222);
   }
   
   body {
@@ -74,7 +74,7 @@
   
   .btns-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
   
@@ -113,16 +113,29 @@
   }
   
   #clear {
-    background-color: var(--btn-red);
+    background-color: var(--btn-green);
     color: white;
   }
   
   #clear:hover {
-    background-color: var(--btn-red-hover);
+    background-color: var(--btn-green-hover);
   }
   
   #clear:active {
-    background-color: var(--btn-red-active);
+    background-color: var(--btn-green-active);
+  }
+
+  #delete {
+    background-color: var(--btn-green);
+    color: white;
+  }
+  
+  #delete:hover {
+    background-color: var(--btn-green-hover);
+  }
+  
+  #delete:active {
+    background-color: var(--btn-green-active);
   }
   
   #point {

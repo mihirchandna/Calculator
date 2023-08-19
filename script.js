@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const operatorButtons=document.querySelectorAll('[data-operator]');
     const equalButton=document.getElementById('equals');
     const clearButton=document.getElementById('clear');
+    const deleteButton=document.getElementById('delete');
     const pointButton = document.getElementById('point');
     const lastOperationScreen=document.getElementById('lastOperationScreen');
     const currentOperationScreen=document.getElementById('currentOperationScreen');
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clearButton.addEventListener('click',clear);
     pointButton.addEventListener('click', appendPoint);
     equalButton.addEventListener('click',evaluate);
+    deleteButton.addEventListener('click', deleteNum);
 
 
     numberButtons.forEach((button)=>
@@ -38,6 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetScreen() {
         currentOperationScreen.textContent = '';
         shouldResetScreen = false;
+    }
+
+    function deleteNum()
+    {
+        currentOperationScreen.textContent=currentOperationScreen.textContent.toString().slice(0,-1);
     }
 
     function setCurrentOperation(currOperation)
