@@ -140,6 +140,7 @@
   
   #point {
     font-size: 24px;
+    grid-column: span 2;
   }
   
   .footer {
